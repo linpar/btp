@@ -66,7 +66,7 @@ public class User {
              
              
              factorValue=factor.process(rating1,rating2);
-                //System.out.println(factorValue);
+                System.out.println(factorValue);
             }
             
              rating1.clear();
