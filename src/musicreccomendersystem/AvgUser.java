@@ -24,7 +24,10 @@ public class AvgUser {
             rating=(int)i.next();
             sum+=rating;
         }
+        if(userRating.size()!=0)
         avg=sum/userRating.size();
+       else
+            System.out.println("nitin dev");
         return avg;
     }
 }

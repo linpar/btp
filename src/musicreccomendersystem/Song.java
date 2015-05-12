@@ -26,7 +26,7 @@ public class Song {
     {
         try {
             dataCon = new DataConnection();
-            rs= dataCon.s.executeQuery("SELECT rating FROM `user_song_test_ratings` where id = 'userId'");
+            rs= dataCon.s.executeQuery("SELECT rating FROM `user_song_train_small_ratings` where id = '"+userId+"'");
             while(rs.next())
                 {
                     

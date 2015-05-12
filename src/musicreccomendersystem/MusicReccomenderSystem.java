@@ -32,7 +32,7 @@ public class MusicReccomenderSystem {
         songId=scan.nextInt();
         User user1= new User();
         userlist=user1.getUser(userId);
-        user1.similarity(userId, userlist);
+        user1.similarity(userId,songId,userlist);
         
         
         
