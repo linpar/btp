@@ -21,6 +21,7 @@ public class DataConnection {
         try {
             Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/btp_main","root","");
             s = c.createStatement();
+            
         }       
         catch (SQLException ex) {
             Logger.getLogger(DataConnection.class.getName()).log(Level.SEVERE, null, ex);

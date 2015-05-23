@@ -27,13 +27,13 @@ public class MusicReccomenderSystem {
        
        Scanner scan = new Scanner(System.in);
        int userId,songId;
-       ArrayList<Integer> userlist;
+       ArrayList<Integer> songlist=new ArrayList<Integer>();
        userId=scan.nextInt();
-        songId=scan.nextInt();
-        User user1= new User();
-        userlist=user1.getUser(userId);
-        user1.similarity(userId,songId,userlist);
-        
+        songlist.add(166);
+        songlist.add(2245);
+        songlist.add(3647);
+        reccomender prediction = new reccomender();
+        prediction.predictSystem(songlist, userId);
         
         
     }

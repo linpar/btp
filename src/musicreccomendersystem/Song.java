@@ -13,7 +13,7 @@ import java.util.logging.Logger;
  * @author Dev
  */
 public class Song {
-     DataConnection dataCon;
+    
     ResultSet rs;
     int userId;
     public Song(int userId)
@@ -22,10 +22,10 @@ public class Song {
     }
     ArrayList<Integer> songId = new ArrayList<Integer>();
     
-    public  ArrayList<Integer> get()
+    public  ArrayList<Integer> get( DataConnection dataCon)
     {
         try {
-            dataCon = new DataConnection();
+           
             rs= dataCon.s.executeQuery("SELECT rating FROM `user_song_train_small_ratings` where id = '"+userId+"'");
             while(rs.next())
                 {
